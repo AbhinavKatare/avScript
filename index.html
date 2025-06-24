@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVScript - AI Script Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-robot"></i>
+          <h1>AVScript AI</h1>
+        </div>
+        <div class="user-info">
+          <span>Welcome, Abhinav Sir</span>
+          <div class="status-indicator"></div>
+        </div>
+      </div>
+      <p class="subtitle">Your AI-powered script generator assistant 🚀</p>
+    </header>
+
+    <main>
+      <aside id="sidebar">
+        <div class="sidebar-header">
+          <h3><i class="fas fa-history"></i> Chat History</h3>
+          <button id="new-chat-btn" class="new-chat-btn">
+            <i class="fas fa-plus"></i> New Chat
+          </button>
+        </div>
+        <div class="history-container">
+          <ul id="history-list"></ul>
+        </div>
+      </aside>
+
+      <section id="chat-section">
+        <div id="chat-window">
+          <div class="welcome-message">
+            <div class="welcome-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h2>How can I help you today?</h2>
+            <p>Ask me anything about script generation, content creation, or YouTube strategies!</p>
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <form id="chat-form">
+            <div class="input-wrapper">
+              <input id="user-input" type="text" placeholder="Type your message here..." autocomplete="off" />
+              <button type="submit" id="send-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <div class="typing-indicator" id="typing-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            AI is typing...
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
